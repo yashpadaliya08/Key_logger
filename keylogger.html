@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">  </script>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        #log ,#state {
+            width: 500px;
+            height: 50px;
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            background-color: #ffa550;
+            border-radius: 10px;
+        }
+        .button-container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        button{
+            padding: 10px;
+            margin: 10px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>
+        Key Logger
+    </h1>
+    <div class="button-container">
+        <button id="start-btn">
+            <h3> Start logging keypress </h3>
+        </button>
+        <button id="stop-btn">
+           <h3> Stop logging keypress</h3>
+        </button>
+
+    </div>
+    <div id="log"></div>
+    <div id="state"></div>
+</div>
+
+<script src="key.js">
+</script>
+
+</body>
+</html>
